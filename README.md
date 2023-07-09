@@ -25,7 +25,7 @@ docker compose up
 
 When you start the project, Docker downloads any images it needs to run. You can see that APISIX, etcd and Python app (`chatgpt-config`) services are running.
 
-![ChatGPT Custom Plugin For API Gateway is running](https://static.apiseven.com/uploads/2023/07/09/fjdeTtHh_Untitled%20%2811%29.png))
+![ChatGPT Custom Plugin For API Gateway is running](https://static.apiseven.com/uploads/2023/07/09/fjdeTtHh_Untitled%20%2811%29.png)
 
 ### Connect the custom plugin to the ChatGPT interface
 
