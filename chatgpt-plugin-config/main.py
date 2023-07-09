@@ -2,7 +2,7 @@ import requests
 import os
 
 import yaml
-from flask import Flask, jsonify, Response, request, send_from_directory
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -31,8 +31,7 @@ def serve_openapi_yaml():
 def serve_openapi_json():
     return send_from_directory(os.path.dirname(__file__), 'logo.png')
 
-# This method you need only if you are running plugin locally.
-# If you are running it on a remote server, you do not need it
+# To proxy request from ChatGPT to the API Gateway
 @app.route('/<path:path>', methods=['GET', 'POST'])
 def wrapper(path):
 
@@ -45,7 +44,7 @@ def wrapper(path):
 
     if request.method == 'GET':
         response = requests.get(url, headers=headers, params=request.args)
-    elif request.method == 'POST' or request.method == 'DeLETE' or request.method == 'PATCH' or request.method == 'PUT':
+    elif request.method in ['POST', 'DELETE', 'PATCH', 'PUT']:
         print(request.headers)
         response = requests.post(url, headers=headers, params=request.args, json=request.json)
     else:
