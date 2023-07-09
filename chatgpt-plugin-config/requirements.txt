@@ -1,0 +1,4 @@
+PyYAML
+requests
+flask
+flask_cors

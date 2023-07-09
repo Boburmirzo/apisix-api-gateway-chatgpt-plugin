@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "APISIX plugin for ChatGPT",
+    "name_for_model": "sessionstopics",
+    "description_for_human": "API Gateway plugin to manage your backend APIs.",
+    "description_for_model": "Create, get, update and delete APISIX routes. Crease upstream, plugins inside route configuration",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "http://localhost:5000/openapi.yaml"
+    },
+    "logo_url": "http://localhost:5000/logo.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "http://www.example.com/legal"
+}

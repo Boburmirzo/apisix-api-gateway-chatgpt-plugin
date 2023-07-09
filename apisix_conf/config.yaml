@@ -1,0 +1,8 @@
+deployment:
+  etcd:
+    host:
+      - "http://etcd:2397"
+  admin:
+    admin_key_required: false
+    allow_admin:
+      - 0.0.0.0/0
