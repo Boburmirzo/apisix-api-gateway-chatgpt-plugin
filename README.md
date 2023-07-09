@@ -42,3 +42,23 @@ After you click on “Find a manifest file”, if everything is set it up correc
 Now the plugin is connected to the ChatGPT interface, we can write a simple command:
 
 ![Ask ChatGPT to create a Route](https://static.apiseven.com/uploads/2023/07/09/BmW5Ce4m_Untitled%20%2810%29.png)
+
+### Next steps
+
+Now you can take the sample project as a foundation and improve functionalities by adding more APISIX [Admin API](https://docs.api7.ai/apisix/reference/admin-api) specifications to [openapi.yaml](https://github.com/Boburmirzo/apisix-api-gateway-chatgpt-plugin/blob/main/chatgpt-plugin-config/openapi.yaml) file to use plugins and add API consumers and more. Feel free to contribute to the GitHub project by raising pull requests.
+
+### Community
+
+🙋 [Join the Apache APISIX Community](https://apisix.apache.org/docs/general/join/)
+
+🐦 [Follow us on Twitter](https://twitter.com/ApacheAPISIX)
+
+📝 [Find us on Slack](https://join.slack.com/t/the-asf/shared_invite/zt-vlfbf7ch-HkbNHiU_uDlcH_RvaHv9gQ)
+
+💁 [How to contribute page](https://apisix.apache.org/docs/general/how-to-contribute/)
+
+### About the author
+
+Follow me on Twitter: [@BoburUmurzokov](https://twitter.com/BoburUmurzokov)
+
+Visit my blog: [www.iambobur.com](https://www.iambobur.com/)
