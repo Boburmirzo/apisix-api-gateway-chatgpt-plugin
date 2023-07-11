@@ -1220,6 +1220,7 @@ paths:
                         - discovery_type
                 plugins:
                   type: object
+                  properties: {}
                 remote_addr:
                   type: string
                   anyOf:
