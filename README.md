@@ -2,6 +2,9 @@
 
 This repo has source code for a **custom ChatGPT Plugin for API Gateway**. You can use it to add API Gateway features such as **authentication, security, traffic management, observability, caching,** and other functionalities for your backend APIs using ChatGPT UI and [Apache APISIX](https://apisix.apache.org/).
 
+> If you want to use [Apache APISIX](https://apisix.apache.org/) API Gateway as a front door for communication between ChatGPT custom plugins
+and backend APIs, you can check this repo [API Gateway between ChatGPT custom plugin and backend APIs](https://github.com/Boburmirzo/apisix-chatgpt-gateway-plugin)
+
 ## How does it work?
 
 As an example, in the [ChatGPT user interface](https://chat.openai.com/), if a user wants to introduce an API Gateway in front of an existing [Conference API](https://conferenceapi.azurewebsites.net/) to obtain details about a speaker's sessions and topics, the plugin is capable of receiving commands in the chat and then forwards the user's request to the Apache APISIX [Admin API](https://apisix.apache.org/docs/apisix/admin-api/), which create a [Route](https://apisix.apache.org/docs/apisix/terminology/route/) with the user-specified input configuration. This can be another approach to **using the Chatbot to configure the API Gateway features.** See sample output to the prompt below:
