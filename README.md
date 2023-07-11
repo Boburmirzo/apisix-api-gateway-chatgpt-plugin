@@ -35,7 +35,7 @@ If you have a **Plus account**, we must first enable the plugin in GPT-4 since i
 
 ![Untitled](https://static.apiseven.com/uploads/2023/07/09/BXsrCUtY_ChatGPT%20screenshot%204.png)
 
-After you click on “Find a manifest file”, if everything is set it up correctly, you will see ChatGPT validates successfully both manifest and OpenAPI spec files. 
+After you click on “Find a manifest file”, if everything is set it up correctly, you will see ChatGPT validates both manifest and OpenAPI spec files successfully. 
 
 ![Untitled](https://static.apiseven.com/uploads/2023/07/09/TXjNTZ4h_ChatGPT%20screenshot%203.png)
 
@@ -44,6 +44,15 @@ After you click on “Find a manifest file”, if everything is set it up correc
 Now the plugin is connected to the ChatGPT interface, we can write a simple command:
 
 ![Ask ChatGPT to create a Route](https://static.apiseven.com/uploads/2023/07/09/BmW5Ce4m_Untitled%20%2810%29.png)
+
+#### Other demo use cases:
+
+1. Create a Route with a plugin.
+![image](https://github.com/Boburmirzo/apisix-api-gateway-chatgpt-plugin/assets/14247607/3324aed6-d16c-48b4-8f5b-8a162e04d4fd)
+
+2. Show all existing routes.
+![image](https://github.com/Boburmirzo/apisix-api-gateway-chatgpt-plugin/assets/14247607/a4e390c4-1cb1-4055-a5cb-f765d861d9bf)
+
 
 ### Next steps
 
