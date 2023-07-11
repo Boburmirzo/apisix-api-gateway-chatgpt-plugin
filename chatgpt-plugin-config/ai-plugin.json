@@ -3,7 +3,7 @@
     "name_for_human": "APISIX plugin for ChatGPT",
     "name_for_model": "apigatewayplugin",
     "description_for_human": "API Gateway plugin to manage your backend APIs.",
-    "description_for_model": "Create, get, update and delete APISIX routes. Crease upstream, plugins inside route configuration",
+    "description_for_model": "Create, retrive, manage APISIX routes, upstreams, and plugins. Update and delete existing routes by a route id. Create, get, delete and manage APISIX plugin configs",
     "auth": {
         "type": "none"
     },

@@ -44,8 +44,9 @@ def wrapper(path):
 
     if request.method == 'GET':
         response = requests.get(url, headers=headers, params=request.args)
-    elif request.method in ['POST', 'DELETE', 'PATCH', 'PUT']:
-        print(request.headers)
+    elif request.method == 'DELETE':
+        response = requests.delete(url, params=request.args)    
+    elif request.method in ['POST', 'PATCH', 'PUT']:
         response = requests.post(url, headers=headers, params=request.args, json=request.json)
     else:
         raise NotImplementedError(f'Method {request.method} not implemented in wrapper for {path=}')
