@@ -6,6 +6,8 @@ This repo has source code for a **custom ChatGPT Plugin for API Gateway**. You c
 
 As an example, in the [ChatGPT user interface](https://chat.openai.com/), if a user wants to introduce an API Gateway in front of an existing [Conference API](https://conferenceapi.azurewebsites.net/) to obtain details about a speaker's sessions and topics, the plugin is capable of receiving commands in the chat and then forwards the user's request to the Apache APISIX [Admin API](https://apisix.apache.org/docs/apisix/admin-api/), which create a [Route](https://apisix.apache.org/docs/apisix/terminology/route/) with the user-specified input configuration. This can be another approach to **using the Chatbot to configure the API Gateway features.** See sample output to the prompt below:
 
+![Chatbot to configure the API Gateway features](https://static.apiseven.com/uploads/2023/07/11/5R8pO3sy_Untitled%20%289%29.png)
+
 After the command runs successfully, APISIX creates the route and registers an [Upstream](https://apisix.apache.org/docs/apisix/terminology/upstream/) for our Conference backend API. So, you can access the API Gateway domain and URL path to get a response through the Gateway. For example, this GET request to [http://localhost:9080/speaker/1/sessions](http://localhost:9080/speaker/6/sessions) endpoint returns all speaker’s sessions from Conference API. You can also do basic operations like **get all routes and a route by Id** directly by asking ChatGPT.
 
 ## How to run it?
