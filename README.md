@@ -6,6 +6,11 @@ This repo has source code for a **custom ChatGPT Plugin for API Gateway**. You c
 
 ![ChatGPT Custom Plugin For API Gateway](/assets/APISIX%20ChatGPT%20Plugin.gif)
 
+> If you want to use [Apache APISIX](https://apisix.apache.org/) API Gateway as a front door for communication between ChatGPT custom plugins
+and backend APIs, you can check this repo [API Gateway between ChatGPT custom plugin and backend APIs](https://github.com/Boburmirzo/apisix-chatgpt-gateway-plugin)
+
+Read the [full tutorial](https://api7.ai/blog/chatgpt-custom-plugin-for-api-gateway) to understand the step-by-step and direct method of developing a ChatGPT Plugin for API Gateway.
+
 ## How does it work?
 
 As an example, in the [ChatGPT user interface](https://chat.openai.com/), if a user wants to introduce an API Gateway in front of an existing [Conference API](https://conferenceapi.azurewebsites.net/) to obtain details about a speaker's sessions and topics, the plugin is capable of receiving commands in the chat and then forwards the user's request to the Apache APISIX [Admin API](https://apisix.apache.org/docs/apisix/admin-api/), which create a [Route](https://apisix.apache.org/docs/apisix/terminology/route/) with the user-specified input configuration. This can be another approach to **using the Chatbot to configure the API Gateway features.** See sample output to the prompt below:
@@ -39,7 +44,7 @@ If you have a **Plus account**, we must first enable the plugin in GPT-4 since i
 
 ![Untitled](https://static.apiseven.com/uploads/2023/07/09/BXsrCUtY_ChatGPT%20screenshot%204.png)
 
-After you click on “Find a manifest file”, if everything is set it up correctly, you will see ChatGPT validates successfully both manifest and OpenAPI spec files. 
+After you click on “Find a manifest file”, if everything is set it up correctly, you will see ChatGPT validates both manifest and OpenAPI spec files successfully. 
 
 ![Untitled](https://static.apiseven.com/uploads/2023/07/09/TXjNTZ4h_ChatGPT%20screenshot%203.png)
 
@@ -48,6 +53,15 @@ After you click on “Find a manifest file”, if everything is set it up correc
 Now the plugin is connected to the ChatGPT interface, we can write a simple command:
 
 ![Ask ChatGPT to create a Route](https://static.apiseven.com/uploads/2023/07/09/BmW5Ce4m_Untitled%20%2810%29.png)
+
+#### Other demo use cases:
+
+1. Create a Route with a plugin.
+![image](https://github.com/Boburmirzo/apisix-api-gateway-chatgpt-plugin/assets/14247607/3324aed6-d16c-48b4-8f5b-8a162e04d4fd)
+
+2. Show all existing routes.
+![image](https://github.com/Boburmirzo/apisix-api-gateway-chatgpt-plugin/assets/14247607/a4e390c4-1cb1-4055-a5cb-f765d861d9bf)
+
 
 ### Next steps
 
